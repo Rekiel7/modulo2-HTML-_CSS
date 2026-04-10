@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lan="es">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,33 +7,47 @@
         <title>Portafolio</title>
     </head>
         <body>
+            <!--Header-->
             <header>
                 <h1>Daniel Chacón</h1>
+                <!--Menú De Navegacion-->
                 <nav>
-                    <a href="mascotas.html">Mascotas</a>
-                    <a href="#about_me">Sobre Mi</a>
-                    <a href="#projects">Proyectos</a>
-                    <a href="#contact">Contactos</a>
+                    <ul>
+                        <li><a href="mascotas.html">Link a Mascotas.html</a></li><hr>
+                        <li><a href="#about_me">Sobre Mi</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contactos</a></li><hr>
+                    </ul>
                 </nav>
             </header>
-                <section id="about_me">
+                <!--Seccion Sobre Mi-->
+                <section id="sobre_mi">
                     <h2>Sobre Mi</h2>
-                    <p>Me considero una persona autodidactica, capaz, atenta y comprensible</p>
+                    <p>Me considero una persona autodidactica, comprensible, atenta y capaz ante cualquier cosa, nada me detiene a pesar de las <strong>adversidades.</strong></p>
                 </section>
-                <section>
+                <!--Seccion De Proyectos-->
+                <section id="proyectos">
                     <h2>Proyectos</h2>
                     <ul>
-                        <li><a href="salchipapasuprema">Salchipapa Suprema</a></li>
+                        <li><a href="salchipapasuprema">Mi Sitio Web</a></li>
                         <li><a href="lagrancolombia">La Gran Colombia</a></li>
-                        <li><a href="coronavirus2">Coronavirus 2</a></li>
+                        <li><a href="coronavirus2">Potencia Internacional</a></li>
                     </ul>
                 </section>
-                <section>
+                <!--Seccion De Contacto-->
+                <section id="contacto">
                     <h2>Contacto</h2>
                     <form>
-                        <label for="nombre">Nombre</label>
+                        <label for="nombre">Nombre:</label>
                         <input type="text" id="nombre" required>
-                        <button type="button">Presiona Aqui</button>
+            
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" rows="5" required></textarea>
+
+                        <button type="submit">Enviar</button>
                     </form>
                 </section>
         </body>
