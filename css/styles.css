@@ -13,6 +13,9 @@ body {
 
 /* HEADER */
 header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
     text-align: center;
@@ -58,12 +61,38 @@ section {
 section h2 {
     color: #2575fc;
     margin-bottom: 1.5rem;
-    border-bottom: 3px solid #6a11cb;
     padding-bottom: 10px;
+}
+
+.proyectos {
+    display: flex;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+}
+
+.proyectos li {
+    background: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    list-style: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(206, 204, 204)
+}
+
+.proyectos a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
 }
 
 /* GALERÍA DE MASCOTAS */
 .galeria {
+    display: flex;
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
